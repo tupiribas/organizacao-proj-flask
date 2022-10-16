@@ -7,8 +7,6 @@ from mercadinho_do_ze.extensions import configuration
 # Testes...
 def minimal_app():
     app = Flask(__name__)
-    #     return app.config.get('TITLE')
-# print(minimal_app())
     configuration.init_app(app)
     return app
 
