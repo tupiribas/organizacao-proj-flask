@@ -1,0 +1,12 @@
+[default]
+    SQLALCHEMY_DATABASE_URI='mysql+pymysql://root:3x3Rc1t0@localhost/test'
+    TITLE = "Mercadinho"
+    SECRET_KEY = "3x3Rc1t0"
+
+    EXTENSIONS = [
+        "mercadinho_do_ze.extensions.appearance",
+        "mercadinho_do_ze.extensions.database",
+        "mercadinho_do_ze.extensions.auth",
+        "mercadinho_do_ze.blueprints.webui",
+        "mercadinho_do_ze.blueprints.restapi"
+    ]
